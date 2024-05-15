@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deryck2000</title>
+  <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=300">
+  <!-- Windows XP Theme (include only one theme at a time) -->
+  <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+  <script>
+    function copyToClipboard() {
+          // コピー対象をJavaScript上で変数として定義する
+      var copyTarget = document.getElementById("copyTarget");
+
+          // コピー対象のテキストを選択する
+      copyTarget.select();
+
+          // 選択しているテキストをクリップボードにコピーする
+      document.execCommand("Copy");
+
+          // コピーをお知らせする
+      alert("Copied! : " + copyTarget.value);
+    }
+  </script>
+  <style>
+    .body {
+      position: relative;
+    }
+    .whcontent {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 400px;
+      height: 300px;
+/*    background: #99f;*/
+}
+.flex {
+  display: flex;
+  flex-start;
+}
+.dedeo_icon{
+  margin-right: 10px;
+}
+body {
+  background-image: url("d_assets/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: center center; 
+}
+.foot {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+</style>
+
+</head>
+
+<body>
+  <div class="whcontent">
+    <div class="window" style="width: 400px">
+      <div class="title-bar">
+        <div class="title-bar-text">Welcome!</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <ul class="tree-view">
+          <li><a href="index.html"style="color: blue"><u>https://deryck2000.jp.eu.org/</u></a></li>
+          <ul>
+            <li><a href="bio/index.html"style="color: blue"><u>bio</u></a> - My Profile</a></li>
+          </ul>
+        </ul>
+      </div>
+      <div class="status-bar">
+        <p class="status-bar-field">©2024 Deryck2000</p>
+        <p class="status-bar-field">CSS by <a href="https://botoxparty.github.io/XP.css/" target="_blank">XP.css</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <div class="foot"><span style="background-color:rgba(255, 255, 255, 0.4)">Photo by <a href="https://unsplash.com/@karpic?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">David Karp.</a> on <a href="https://unsplash.com/photos/green-grass-field-under-blue-sky-during-daytime-EJIFu_veczw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a></span>
+  </div>
+
+</footer>
+</html>
