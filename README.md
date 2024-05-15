@@ -1,2 +1,2 @@
 # deryck2000.jp.eu.org
-website
+bio: https://bio.deryck2000.jp.eu.org/
