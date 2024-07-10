@@ -36,6 +36,72 @@
                 font-family: 'tabler-icons';
                 content: '\ea99';
             }
+
+
+
+/*h2{
+    color: $blue;
+    font-size: 24px;
+    line-height: 1.25;
+    font-family: "Roboto Slab", serif;
+    margin-top: $base-margin;
+    margin-bottom: $base-margin;
+}*/
+
+
+.tab-slider--nav{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.tab-slider--tabs{
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #222;
+    height: 40px;
+    user-select: none; 
+    &:after{
+        content: "";
+        width: 50%;
+        background: #a63030;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 3px;
+    }
+    &.slide:after{
+        left: 50%;
+    }
+}
+
+.tab-slider--trigger {
+    font-size: 17px;
+    line-height: 1;
+    color: #a63030;
+    text-align: center;
+    padding: 6px 30px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none; 
+    &.active {
+        color: #000;
+    }
+}
+.tab-slider--body{
+    margin-bottom: 20px;
+}
+
+
+
         </style>
 
         <link rel="me" href="https://misskey.art/@deryck" />
@@ -66,6 +132,21 @@
         <img src="assets/header.png" alt="Deryck2000" class="adjust"><br>
     </header>
     <main>
+
+
+
+<div class="container">
+    <div class="tab-slider--nav">
+        <ul class="tab-slider--tabs">
+            <li class="tab-slider--trigger active" rel="tab1"><i class="ti ti-user"></i>Profile</li>
+            <li class="tab-slider--trigger" rel="tab2"><i class="ti ti-pencil"></i>Creations</li>
+        </ul>
+    </div>
+    <div class="tab-slider--container">
+        <div id="tab1" class="tab-slider--body">
+
+
+
         <!-- WOXアクセスカウンタータグ ここから -->
         <script src="https://deryck2000.counter.wox.cc" language="JavaScript" type="text/javascript"></script><noscript><a href="https://wox.cc"><img src="https://deryck2000.counter.wox.cc/?mode=noscript" alt="ホームページ ブログ レンタル掲示板 - WOX" title="ホームページ ブログ レンタル掲示板 - WOX" /></a></noscript>
         <!-- WOXアクセスカウンタータグ ここまで -->
@@ -100,6 +181,38 @@
             88x31px:<br><img src="assets/banner/deryck_banner_88_31.png"><br>
             200x40px:<br><img src="assets/banner/deryck_banner_200_40.png"><br>
             234x60px:<br><img src="assets/banner/deryck_banner_234_60.png">
+
+        </div>
+        <div id="tab2" class="tab-slider--body">
+            <h2>Arts</h2>
+
+
+<a href="assets/creations/sousaku_world.png" class="fuwaimg"><img src="assets/creations/sousaku_world.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+<a href="assets/creations/sakura_and_dedeo.png" class="fuwaimg"><img src="assets/creations/sakura_and_dedeo.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+<a href="assets/creations/mofutaro_and_dedeo.png" class="fuwaimg"><img src="assets/creations/mofutaro_and_dedeo.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+<a href="assets/creations/eyeangels_and_dedeo_and_other.png" class="fuwaimg"><img src="assets/creations/eyeangels_and_dedeo_and_other.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+<a href="assets/creations/figure.gif" class="fuwaimg"><img src="assets/creations/figure.gif" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+<a href="assets/creations/rdad.png" class="fuwaimg"><img src="assets/creations/rdad.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+<a href="assets/creations/rdad2.png" class="fuwaimg"><img src="assets/creations/rdad2.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+<a href="assets/creations/sousaku_world2.png" class="fuwaimg"><img src="assets/creations/sousaku_world2.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+<a href="assets/creations/tabi.png" class="fuwaimg"><img src="assets/creations/tabi.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+<a href="assets/creations/ikemen.png" class="fuwaimg"><img src="assets/creations/ikemen.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+
+
+<h2>For VRChat</h2>
+<p><a href="https://dormitiser.booth.pm">https://dormitiser.booth.pm</a></p>
+<a href="assets/creations/eyeangel.png" class="fuwaimg"><img src="assets/creations/eyeangel.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+<a href="assets/creations/eyeman.png" class="fuwaimg"><img src="assets/creations/eyeman.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+<a href="assets/creations/aeropen.png" class="fuwaimg"><img src="assets/creations/aeropen.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
         </main>
         <footer>
         </details>
@@ -110,11 +223,13 @@
         <img alt="Static Badge" src="https://img.shields.io/badge/Published%20on-2024%2F5%2F15%2C%20PM%203%3A46%20GMT%2B9-success?style=plastic">
 
         <p>
-            Credits: <a href="https://newcss.net/" target="_blank" class="linkicon">new.css</a> , <a href="https://tabler.io/icons" target="_blank" class="linkicon">Tabler Icons</a></p>
+            Credits: <a href="https://newcss.net/" target="_blank" class="linkicon">new.css</a> , <a href="https://tabler.io/icons" target="_blank" class="linkicon">Tabler Icons</a>, <a href="https://do.gt-gt.org/product/fuwaimg/" target="_blank" class="linkicon">fuwaimg</a></p>
             <br>
             <small><i class="ti ti-copyright"></i>2024 Deryck2000</small>
         </footer>
         <script src="fuwaimg/js/scrollbooster.min.js"></script>
 <script src="fuwaimg/js/fuwaimg.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="index.js"></script>
     </body>
     </html>
