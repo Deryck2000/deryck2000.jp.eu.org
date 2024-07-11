@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.8.0/dist/tabler-icons.min.css">
     <link rel="stylesheet" href="fuwaimg/css/fuwaimg.css">
     <style>
+        body{
+    overflow-y: scroll;
+        }
         img .adjust{   
             max-width: 400px;
             min-width: 32px;
@@ -48,58 +51,44 @@
     margin-bottom: $base-margin;
 }*/
 
-
-.tab-slider--nav{
-    width: 100%;
-    float: left;
-    margin-bottom: 20px;
-}
-.tab-slider--tabs{
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
-    border-radius: 3px;
-    overflow: hidden;
-    background: #222;
-    height: 40px;
-    user-select: none; 
-    &:after{
-        content: "";
-        width: 50%;
-        background: #a63030;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 3px;
-    }
-    &.slide:after{
-        left: 50%;
-    }
-}
-
-.tab-slider--trigger {
-    font-size: 17px;
-    line-height: 1;
-    color: #a63030;
-    text-align: center;
-    padding: 6px 30px;
-    position: relative;
-    z-index: 2;
-    cursor: pointer;
-    display: inline-block;
-    user-select: none; 
-    &.active {
-        color: #000;
-    }
-}
-.tab-slider--body{
-    margin-bottom: 20px;
-}
-
+        .tab-container {
+            width: 100%;
+        }
+        .tab-buttons {
+            display: flex;
+            width: 100%;
+        }
+        .tab-button {
+            font-size: 20px;
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            background-color: #111111;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+border-radius: 10px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0px;
+border-top:1px solid #222222;
+border-left:1px solid #222222;
+border-right:1px solid #222222;
+        }
+        .tab-button.active {
+            background-color: #000;
+            color: white;
+            border-top:1px solid #fff;
+border-left:1px solid #fff;
+border-right:1px solid #fff;
+        }
+        .tab-content {
+            padding-top: 16px;
+/*            background-color: white;*/
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
 
 
         </style>
@@ -130,28 +119,24 @@
   <body>
     <header>
         <img src="assets/header.png" alt="Deryck2000" class="adjust"><br>
+
     </header>
     <main>
 
 
 
-<div class="container">
-    <div class="tab-slider--nav">
-        <ul class="tab-slider--tabs">
-            <li class="tab-slider--trigger active" rel="tab1"><i class="ti ti-user"></i>Profile</li>
-            <li class="tab-slider--trigger" rel="tab2"><i class="ti ti-pencil"></i>Creations</li>
-        </ul>
-    </div>
-    <div class="tab-slider--container">
-        <div id="tab1" class="tab-slider--body">
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-button active" onclick="showTab(0)">Profile</button>
+            <button class="tab-button" onclick="showTab(1)">Creations</button>
+            <button class="tab-button" onclick="showTab(2)">余り</button>
+        </div>
+        <div id="tab-content-0" class="tab-content active">
 
 
-
-        <!-- WOXアクセスカウンタータグ ここから -->
-        <script src="https://deryck2000.counter.wox.cc" language="JavaScript" type="text/javascript"></script><noscript><a href="https://wox.cc"><img src="https://deryck2000.counter.wox.cc/?mode=noscript" alt="ホームページ ブログ レンタル掲示板 - WOX" title="ホームページ ブログ レンタル掲示板 - WOX" /></a></noscript>
-        <!-- WOXアクセスカウンタータグ ここまで -->
-            <p><i class="ti ti-user-edit"></i><small> Deryck2000, デデオチャン, Dormitiser, Hallcudy, Rudy_leaf</small></p>
+        <h2>自己紹介</h2>
         <p>おえかきと3Dモデリングと色々やってる人。あんかけラーメンが好き</p>
+                    <p><i class="ti ti-user-edit"></i><small>別名: Deryck2000, デデオチャン, Dormitiser, Hallcudy, Rudy_leaf</small></p>
 
         <h3><i class="ti ti-link"></i>Links</h3>
         <p>
@@ -183,7 +168,7 @@
             234x60px:<br><img src="assets/banner/deryck_banner_234_60.png">
 
         </div>
-        <div id="tab2" class="tab-slider--body">
+        <div id="tab-content-1" class="tab-content">
             <h2>Arts</h2>
 
 
@@ -205,10 +190,31 @@
 <a href="assets/creations/eyeman.png" class="fuwaimg"><img src="assets/creations/eyeman.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
 <a href="assets/creations/aeropen.png" class="fuwaimg"><img src="assets/creations/aeropen.png" style="width:150px;height:150px;object-fit:cover;margin:0px;"></a>
 
+       </div>
+        <div id="tab-content-2" class="tab-content">
+            <p>余った！ジャパニーズLorem Ipsum置いとく<br><br>
 
+                列留課無離ふ模保むた個根素知露保区留舳まゃすろ差へさにけかれ、列以こ雲瀬かかせへ個ほひか離列、区津擢鵜うつと知列都樹に巣日ぬもひちは列名魔無日くやゃむこん津ねこひお魔ねれ差阿阿知むめ津留屋樹らすよ御二ふんるんそ手模魔、れ手露列みて列以ゅゆね日鵜個根離毛ちせちさみ保遊ちはえひてんんるねけむチツヌ日野。
+
+よにま日課留無そし尾無無、いく留雲二譜らふほけ尾派御夜テコキネン課擢都課遊手舳日。あに絵素けふンテラレめこはのめきま離素む津素屋素譜雲「た。よ」る無保離課屋素差二以こくち知模かたに雲都ねてひへ以瀬二野んへ等てけにい瀬区派舳保舳雲離留ややよもえ氏列るょ素魔他個き、な氏やかひむろひやてそんめゅゅすゆ樹津。鵜保差鵜っむまヨケリ擢毛ゃはとちょ屋離ふね尾らたこ二都。名知都夜絵派根等。
+
+な都名個舳ヘシツアロよレネアンヤュそきお手尾。ん区知さゆんゅて毛雲にちえほかきなましゆ列津絵屋たらる尾都二ひぬおうみ屋絵絵つと差てかっゆ区名あれなな個絵イヨマオスニ。
+
+阿等目ロエオヌ津樹知派えむゆはぬめすりき派みへいの保野列差差手以ろスミオノふにらカアャふれほと派舳二ゅ氏尾屋氏擢根譜うほかとせゆか毛屋う瀬列こるヘキヒョエんまきゆかち瀬区津等、知、ら、さ氏名く二夜以名野。
+
+氏都ニニサヤヤミ阿個目留たおゆなんひゅねめ名。ぬおまあね目やえのけほん津以樹留留離けみす譜せ等留目すか離舳りおヤシツ日氏派等けり尾舳遊りほたみいゆちさひょ目津れ知区無ゃ瀬めんのひ御巣留き区阿留とツウョ御樹個くひ以よ課露譜雲列ろらけろち夜氏ぬゃ差知野露れすけッノンキへたつそむな、雲知露目舳へソケヘ擢根、氏と、めえし。
+
+とむ毛瀬瀬カノョヘツ遊たすせ阿樹絵名保舳譜他ャオトルミクひは舳派はっひはぬめ、津差、知派こけ根舳ゅちらに日巣区擢お派目あめみイカょひくよ保模氏無差素派絵ふヤケノせちて根日。
+
+個ソクリるれさしウソスコーフキ鵜模よよふこ差根ぬょ日手。課津根模お離夜夜氏阿夜手えけるねも遊夜ゅゅゃな御区オハアンョエくき留譜野雲つ課露やよムヘっけかカエマみなゆてへにいえ離津御ら、ュテツヌそ列等日ゃかょこ「あ以派せそけ」夜舳根区鵜そもえにイッオーニャ屋鵜根えっめそ阿瀬アフリシヌゅこれら夜津他っやう。てやひ御ろいみレリアノヤこ屋目尾、ょ二無まむきしほさなてとい。
+
+あ差模名樹テエトイヒア露知尾派ゃ保二屋雲あほ魔列日都差ら津ホトムチっのたゆこへ屋露津個留ふちねえやない以派樹巣尾かすすきリコカ知知無野りほネエマ根名るつお津素手すこももてっマス。にむはねもり雲瀬けみぬめやれうん瀬個いて舳素ほそちさにてるめのケトコイす鵜手らあにも二離シユサレキョケゅんすか他瀬夜都課目知御魔ちみ巣阿知毛ょ毛ゆしてて名屋、ラホエュ保派。
+
+区素夜氏等モネクヌい、や列ろ舳以ロマオシオリ保保知瀬露すさ日巣擢氏ゆう絵都っ保擢区ぬらよりやてゃちこて遊絵無樹保無他舳つぬえ鵜列無知せヨナ知知保巣夜ほめも差譜保ふマキョウ留舳魔きゃ阿め素雲素御っ舳鵜無二根保都等遊つす舳けふ、瀬知離ゅ御都魔。
+
+根個るて、リヌユモの名差夜模無ノリエラミネ名夜テソフヤュンニ御えひなキャメタモネさんのうみ模課保ホイラサ。他目個他手つほひレハありさ無譜差き尾素ふ目差目て譜区んくとまさ。御野つほへへよねもん舳野魔毛鵜た遊いすもさす野津名なにえひもすりこひ列舳あにつ離手留阿、個譜二津譜二他尾れんさもひは譜手巣留巣魔尾毛ん無知派尾屋譜屋差ふせほいれ。</p>
         </div>
     </div>
-</div>
 
 
 
@@ -231,5 +237,27 @@
 <script src="fuwaimg/js/fuwaimg.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="index.js"></script>
+<script>
+        function showTab(index) {
+            const tabs = document.querySelectorAll('.tab-button');
+            const contents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach((tab, i) => {
+                if (i === index) {
+                    tab.classList.add('active');
+                } else {
+                    tab.classList.remove('active');
+                }
+            });
+            
+            contents.forEach((content, i) => {
+                if (i === index) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+        }
+    </script>
     </body>
     </html>
