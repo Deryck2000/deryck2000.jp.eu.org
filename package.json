@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "xp.css": "^0.2.6"
-  },
-  "devDependencies": {
-    "images-folder-optimizer": "^0.0.37"
-  }
-}
