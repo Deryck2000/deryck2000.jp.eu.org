@@ -6,14 +6,21 @@
     <description>Recent content in Posts on デデオチャンのサイト</description>
     <generator>Hugo</generator>
     <language>ja-ja</language>
-    <lastBuildDate>Tue, 14 Jan 2025 18:04:33 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2025 20:49:48 +0900</lastBuildDate>
     <atom:link href="https://deryck2000.jp.eu.org/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Readme</title>
+      <title>Introduction</title>
       <link>https://deryck2000.jp.eu.org/post/readme/</link>
       <pubDate>Tue, 14 Jan 2025 17:57:52 +0900</pubDate>
       <guid>https://deryck2000.jp.eu.org/post/readme/</guid>
-      <description>&lt;h1 id=&#34;デデオチャンのサイト&#34;&gt;デデオチャンのサイト&lt;/h1&gt;</description>
+      <description>&lt;p&gt;デデオチャンのサイトだ！&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows 11を快適に使いたい</title>
+      <link>https://deryck2000.jp.eu.org/post/win11/</link>
+      <pubDate>Tue, 14 Jan 2025 17:57:52 +0900</pubDate>
+      <guid>https://deryck2000.jp.eu.org/post/win11/</guid>
+      <description>&lt;p&gt;Windows 11を快適に使いたい&lt;br&gt;&#xA;快適にっていうか、いかにWin10と変わらぬ操作感にできるか&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
