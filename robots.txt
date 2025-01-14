@@ -1,5 +1,8 @@
-User-agent: GPTBot
-Disallow: /
-
-Use-Agent: Google-Extended
-Disallow: /
+User-agent: *
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+Allow: /
+Allow: /post
+Allow: /tags
+Allow: /categories
