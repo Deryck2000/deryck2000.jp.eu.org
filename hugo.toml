@@ -3,7 +3,7 @@ languageCode = 'ja-ja'
 defaultContentLanguage = 'ja'
 title = 'デデオチャンのサイト'
 theme = 'github-style'
-publishDir = "public"
+publishDir = "docs"
 
 [params]
   author = "deryck2000"
