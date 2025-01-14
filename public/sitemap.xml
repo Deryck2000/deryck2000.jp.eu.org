@@ -5,6 +5,12 @@
     <loc>https://example.org/</loc>
     <lastmod>2025-01-14T17:57:52+09:00</lastmod>
   </url><url>
+    <loc>https://example.org/post/</loc>
+    <lastmod>2025-01-14T17:57:52+09:00</lastmod>
+  </url><url>
+    <loc>https://example.org/post/readme/</loc>
+    <lastmod>2025-01-14T17:57:52+09:00</lastmod>
+  </url><url>
     <loc>https://example.org/categories/</loc>
   </url><url>
     <loc>https://example.org/tags/</loc>
