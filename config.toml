@@ -1,56 +1,21 @@
 baseURL = 'http://deryck2000.jp.eu.org/'
-languageCode = 'ja'
+languageCode = 'ja-ja'
 defaultContentLanguage = 'ja'
 title = 'デデオチャンのサイト'
 theme = 'github-style'
 
-[author]
-  name = "はらちゃん"
-  bio = "なかなか痩せられないエンジニアです。"
-  job = "backend enginner"
-  location = "Japan"
-  # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  gravatarEmail = "hoge@example.com"
-
 [params]
-  sidebarBehavior = 2
-  thumbnailImage = true
-  dateFormat = "2006-01-02"
-  thumbnailImagePosition = "left"
-  autoThumbnailImage = true
-  coverImage = "images/cover.jpg"
-  imageGallery = true
-  hierarchicalCategories = true
-  syntaxHighlighter = 'highlight.js'
-  
-[[menu.main]]
-  weight = 1
-  identifier = "home"
-  name = "Home"
-  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-home\" aria-hidden=\"true\"></i>"
-  url = "/"
-[[menu.main]]
-  weight = 2
-  identifier = "categories"
-  name = "Categories"
-  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-bookmark\" aria-hidden=\"true\"></i>"
-  url = "/categories"
-[[menu.main]]
-  weight = 3
-  identifier = "tags"
-  name = "Tags"
-  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-tags\" aria-hidden=\"true\"></i>"
-  url = "/tags"
-[[menu.main]]
-  weight = 5
-  identifier = "about"
-  name = "About"
-  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-question\" aria-hidden=\"true\"></i>"
-  url = "/#about"
+  author = "deryck2000"
+  description = ""
+  github = "Deryck2000"
+  url = "http://deryck2000.jp.eu.org/"
+  rss = true
+  lastmod = true
+  location = "Japan"
 
-[[menu.links]]
-  weight = 0
-  identifier = "github"
-  name = "GitHub"
-  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\" aria-hidden=\"true\"></i>"
-  url = ""
+  [[params.links]]
+    title = "Link"
+    href = "http://deryck2000.jp.eu.org/"
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]

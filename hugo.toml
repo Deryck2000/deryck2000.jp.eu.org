@@ -1,3 +1,21 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'http://deryck2000.jp.eu.org/'
+languageCode = 'ja-ja'
+defaultContentLanguage = 'ja'
+title = 'デデオチャンのサイト'
+theme = 'github-style'
+
+[params]
+  author = "deryck2000"
+  description = ""
+  github = "Deryck2000"
+  url = "http://deryck2000.jp.eu.org/"
+  rss = true
+  lastmod = true
+  location = "Japan"
+
+  [[params.links]]
+    title = "Link"
+    href = "http://deryck2000.jp.eu.org/"
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
