@@ -53,3 +53,48 @@
 .link-card-hostname span {
   font-size: 0.9em;
 }
+
+details.dt_md {
+    border: 1px solid var(--color-border-primary);
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+
+details.dt_md[open] {
+    box-shadow: 0 3px 12px rgba(27,31,35,0.15);
+}
+
+details.dt_md summary {
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    outline: none;
+    padding: 4px;
+}
+
+details.dt_md summary::before { 
+  content: '\25B6'; /* デフォルトの閉じた状態の三角形 */ 
+  display: inline-block; 
+  margin-right: 8px; 
+  transition: transform 0.2s ease-in-out; 
+} 
+details.dt_md[open] summary::before {
+ content: '\25BC'; /* 開かれた状態の三角形 */ 
+ transform: rotate(0deg);
+}
+
+details.dt_md summary::-webkit-details-marker {
+    display: none; /* デフォルトのマーカーを非表示にする */
+}
+
+details.dt_md[open] summary {
+    border-bottom: 1px solid var(--color-border-primary);
+    padding-bottom: 16px;
+    margin-bottom: 16px; /* 余白を広く設定 */
+}
+
+details.dt_md p {
+    margin: 0;
+    padding: 8px 0;
+}
