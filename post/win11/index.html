@@ -251,14 +251,12 @@
 <br>
 noMeiryoUIよりもいろんな場所のフォントを置き換えできる。Windows Boot Managerのフォントまで変わる(!?)</p></article>
                 <hr>
-    <button title="記事のタイトルとURLをコピー" class="share-url" data-clipboard-text="Windows 11を快適に使いたい https://deryck2000.jp.eu.org/post/win11/">
-      記事のタイトルとURLをコピー <i class="fas fa-link"></i>
-    </button>
+<button id="copyButton" data-copy-text="Windows 11を快適に使いたい - デデオチャンのサイト\nhttps://deryck2000.jp.eu.org/post/win11/">テキストをコピー</button>
     <button class="share-url"><a href="https://misskey-hub.net/share/?text=Windows%2011%e3%82%92%e5%bf%ab%e9%81%a9%e3%81%ab%e4%bd%bf%e3%81%84%e3%81%9f%e3%81%84&url=https%3a%2f%2fderyck2000.jp.eu.org%2fpost%2fwin11%2f&visibility=public&localOnly=0&manualInstance=misskey.art" target="_blank" rel="noopener noreferrer">Misskeyで共有</a></button>
     <button class="share-url"><a href="https://donshare.net/share.html?text=" onclick="window.open(this.href+encodeURI(decodeURI(document.title))+'&url='+encodeURI(decodeURI(location.href)), '', 'width=500,height=400'); return false;">donshare</a></button>
     <button class="share-url"><a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fderyck2000.jp.eu.org%2fpost%2fwin11%2f&text=Windows%2011%e3%82%92%e5%bf%ab%e9%81%a9%e3%81%ab%e4%bd%bf%e3%81%84%e3%81%9f%e3%81%84" target="_blank" rel="noopener noreferrer">Twitter</a></button>
     <button class="share-url"><a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fderyck2000.jp.eu.org%2fpost%2fwin11%2f&title=Windows%2011%e3%82%92%e5%bf%ab%e9%81%a9%e3%81%ab%e4%bd%bf%e3%81%84%e3%81%9f%e3%81%84" target="_blank" rel="noopener noreferrer">はてブ</a></button>
-    <button class="share-url"><a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fderyck2000.jp.eu.org%2fpost%2fwin11%2f&title=Windows%2011%e3%82%92%e5%bf%ab%e9%81%a9%e3%81%ab%e4%bd%bf%e3%81%84%e3%81%9f%e3%81%84" target="_blank" rel="noopener noreferrer">Pocket</a></button>
+    <button class="share-url"><a href="http://getpocket.com/edit?url=https%3a%2f%2fderyck2000.jp.eu.org%2fpost%2fwin11%2f&title=Windows%2011%e3%82%92%e5%bf%ab%e9%81%a9%e3%81%ab%e4%bd%bf%e3%81%84%e3%81%9f%e3%81%84" target="_blank" rel="noopener noreferrer">Pocket</a></button>
               </div>
             </div>
           </div>
@@ -268,6 +266,33 @@ noMeiryoUIよりもいろんな場所のフォントを置き換えできる。W
   </main>
 </div>
 <script type="application/javascript" src='https://deryck2000.jp.eu.org/js/toc.js'></script>
+<script>
+document.getElementById("copyButton").addEventListener("click", function() {
+    
+    var button = document.getElementById("copyButton");
+    
+    var textToCopy = button.getAttribute("data-copy-text").replace(/\\n/g, "\n");
+    var textArea = document.createElement("textarea");
+    textArea.value = textToCopy;
+    document.body.appendChild(textArea);
+    textArea.select();
+    try {
+        document.execCommand("copy");
+        var originalButtonText = button.textContent;
+        button.textContent = "コピーしました!";
+        
+        
+        setTimeout(function() {
+            button.textContent = originalButtonText;
+        }, 2000);
+    } catch (err) {
+        console.error("コピーに失敗しました", err);
+    }
+    document.body.removeChild(textArea);
+});
+
+
+</script>
 <link rel="stylesheet" href='https://deryck2000.jp.eu.org/css/toc.css' />
 
   
@@ -293,7 +318,7 @@ noMeiryoUIよりもいろんな場所のフォントを置き換えできる。W
   <div class="d-flex flex-justify-center pb-6">
     <span class="f6 text-gray-light"></span>
   </div>
-<script src="/js/clipboard-min.js" defer></script>
+<script src="/js/clipboard.js" defer></script>
 <script src="/js/clipboard-init.js" defer></script>
 
 

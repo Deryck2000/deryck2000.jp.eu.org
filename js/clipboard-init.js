@@ -28,3 +28,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 });
+
+document.getElementById("copyButton").addEventListener("click", function() {
+    // コピーするテキスト
+    var textToCopy = "これがコピーされるテキストです";
+    var textArea = document.createElement("textarea");
+    textArea.value = textToCopy;
+    document.body.appendChild(textArea);
+    textArea.select();
+    try {
+        document.execCommand("copy");
+        var button = document.getElementById("copyButton");
+        var originalButtonText = button.textContent;
+        button.textContent = "コピーしました!";
+        
+        // 2秒後にボタンのテキストを元に戻す
+        setTimeout(function() {
+            button.textContent = originalButtonText;
+        }, 2000);
+    } catch (err) {
+        console.error("コピーに失敗しました", err);
+    }
+    document.body.removeChild(textArea);
+});
