@@ -4,5 +4,8 @@ Disallow: /css/
 Disallow: /images/
 Allow: /
 Allow: /post
+Allow: /post/
 Allow: /tags
+Allow: /tags/
 Allow: /categories
+Allow: /categories/
