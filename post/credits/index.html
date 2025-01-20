@@ -354,33 +354,6 @@
   </main>
 </div>
 <script type="application/javascript" src='https://deryck2000.jp.eu.org/js/toc.js'></script>
-<script>
-document.getElementById("copyButton").addEventListener("click", function() {
-    
-    var button = document.getElementById("copyButton");
-    
-    var textToCopy = button.getAttribute("data-copy-text").replace(/\\n/g, "\n");
-    var textArea = document.createElement("textarea");
-    textArea.value = textToCopy;
-    document.body.appendChild(textArea);
-    textArea.select();
-    try {
-        document.execCommand("copy");
-        var originalButtonText = button.textContent;
-        button.textContent = "コピーしました!";
-        
-        
-        setTimeout(function() {
-            button.textContent = originalButtonText;
-        }, 2000);
-    } catch (err) {
-        console.error("コピーに失敗しました", err);
-    }
-    document.body.removeChild(textArea);
-});
-
-
-</script>
 <link rel="stylesheet" href='https://deryck2000.jp.eu.org/css/toc.css' />
 
   

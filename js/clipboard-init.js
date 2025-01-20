@@ -30,15 +30,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 document.getElementById("copyButton").addEventListener("click", function() {
-    // コピーするテキスト
-    var textToCopy = "これがコピーされるテキストです";
+    // ボタンのdata-copy-text属性からコピーするテキストを取得
+    var button = document.getElementById("copyButton");
+    // 改行文字は二重エスケープしています
+    var textToCopy = button.getAttribute("data-copy-text").replace(/\\n/g, "\n");
     var textArea = document.createElement("textarea");
     textArea.value = textToCopy;
     document.body.appendChild(textArea);
     textArea.select();
     try {
         document.execCommand("copy");
-        var button = document.getElementById("copyButton");
         var originalButtonText = button.textContent;
         button.textContent = "コピーしました!";
         
