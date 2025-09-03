@@ -1,6 +1,0 @@
-[submodule "themes/--force"]
-	path = themes/--force
-	url = git@github.com:MeiK2333/github-style.git
-[submodule "themes/Github-Style-Theme"]
-	path = themes/Github-Style-Theme
-	url = git@github.com:MeiK2333/github-style.git
