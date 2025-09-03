@@ -2,28 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://deryck2000.jp.eu.org/categories/</loc>
+    <lastmod>2025-09-03T20:49:45+09:00</lastmod>
+  </url><url>
     <loc>https://deryck2000.jp.eu.org/post/hal-marker/</loc>
-    <lastmod>2025-01-29T06:47:29+09:00</lastmod>
+    <lastmod>2025-09-03T20:49:45+09:00</lastmod>
   </url><url>
     <loc>https://deryck2000.jp.eu.org/post/</loc>
-    <lastmod>2025-01-29T06:47:29+09:00</lastmod>
+    <lastmod>2025-09-03T20:49:45+09:00</lastmod>
   </url><url>
     <loc>https://deryck2000.jp.eu.org/</loc>
-    <lastmod>2025-01-29T06:47:29+09:00</lastmod>
+    <lastmod>2025-09-03T20:49:45+09:00</lastmod>
   </url><url>
-    <loc>https://deryck2000.jp.eu.org/post/bozu/</loc>
-    <lastmod>2025-01-20T12:40:21+09:00</lastmod>
-  </url><url>
-    <loc>https://deryck2000.jp.eu.org/post/credits/</loc>
-    <lastmod>2025-01-20T15:00:34+09:00</lastmod>
-  </url><url>
-    <loc>https://deryck2000.jp.eu.org/readme/</loc>
-    <lastmod>2025-01-18T02:10:54+09:00</lastmod>
+    <loc>https://deryck2000.jp.eu.org/categories/%E9%85%8D%E5%B8%83/</loc>
+    <lastmod>2025-09-03T20:49:45+09:00</lastmod>
   </url><url>
     <loc>https://deryck2000.jp.eu.org/post/win11/</loc>
     <lastmod>2025-01-16T07:36:14+09:00</lastmod>
-  </url><url>
-    <loc>https://deryck2000.jp.eu.org/categories/</loc>
   </url><url>
     <loc>https://deryck2000.jp.eu.org/tags/</loc>
   </url>

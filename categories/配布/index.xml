@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>デデオチャンのサイト</title>
-    <link>https://deryck2000.jp.eu.org/</link>
-    <description>Recent content on デデオチャンのサイト</description>
+    <title>配布 on デデオチャンのサイト</title>
+    <link>https://deryck2000.jp.eu.org/categories/%E9%85%8D%E5%B8%83/</link>
+    <description>Recent content in 配布 on デデオチャンのサイト</description>
     <generator>Hugo</generator>
     <language>ja-ja</language>
     <lastBuildDate>Wed, 03 Sep 2025 20:49:45 +0900</lastBuildDate>
-    <atom:link href="https://deryck2000.jp.eu.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://deryck2000.jp.eu.org/categories/%E9%85%8D%E5%B8%83/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HAL-MARKER-FA【FireAlpaca/Medibang Paint向けブラシ配布】</title>
       <link>https://deryck2000.jp.eu.org/post/hal-marker/</link>
       <pubDate>Wed, 29 Jan 2025 06:28:53 +0900</pubDate>
       <guid>https://deryck2000.jp.eu.org/post/hal-marker/</guid>
       <description>&lt;p&gt;CLIP STUDIO PAINT向けに配布している「HAL-MARKER」系ブラシのFireAlpaca/Medibang Paint向けバージョンです。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Windows 11を快適に使いたい</title>
-      <link>https://deryck2000.jp.eu.org/post/win11/</link>
-      <pubDate>Tue, 14 Jan 2025 17:57:52 +0900</pubDate>
-      <guid>https://deryck2000.jp.eu.org/post/win11/</guid>
-      <description>&lt;p&gt;Windows 11を快適に使いたい&lt;br&gt;&#xA;快適にっていうか、いかにWin10と変わらぬ操作感にできるか&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
