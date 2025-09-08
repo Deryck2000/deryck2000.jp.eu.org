@@ -4,6 +4,13 @@
   .border{
     border: 1px solid;
   }
+  .banner{
+    display: block!important;
+    font-size: 0px;
+      border: 0;
+  padding: 0;
+  margin: 0;
+  }
   .hooter p{
   text-align: center;
 }
@@ -14,3 +21,8 @@ body{
 .w{
   background-color: #EDEBE0;
 }
+
+h2, h3, h4 { 
+border-bottom: 1px solid;
+
+ }
