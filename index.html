@@ -1,39 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="hallcuie's site">
-    <title>deryck2000.jp.eu.org</title>
-    <style type="text/css">
-        body {
-            font-family: "Cascadia Mono", "Monaco", monospace;
-            margin: 40px auto;
-            max-width: 500px;
-            line-height: 1.4;
-            font-size: 16px;
-            color: #444;
-            padding: 0 10px;
-            background: #eeeeee;
-        }
-        h1,h2,h3{
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="hallcuie's site">
+<title>deryck2000.jp.eu.org</title>
+<link rel="stylesheet" href="https://unpkg.com/98.css">
+<style type="text/css">
+    /*@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400..600&display=swap');*/
+body{
+margin: 30px auto 0;
+max-width: 760px;
+background: #008080;
+    -webkit-font-smoothing: none; /* Chrome, Safari */
+    -moz-osx-font-smoothing: none; /* Firefox */
+    font-smoothing: none;
+    
+    image-rendering: pixelated; /* Chrome, Edge, Safari */
+    image-rendering: crisp-edges; /* Firefox */
+}
+
+.title-bar, .window, button, input, label, legend, li[role=tab], option, select, table, textarea, ul.tree-view{
+    font-family: "Arial",sans-serif !important;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/*テスト用*/
+/*div{border: 1px solid #ddd;}*/
+
+</style>
+
+
+
+<style type="text/css">
+.parent {
+display: grid;
+grid-template-columns: 250px 500px;
+grid-template-rows: minmax(1px, max-content);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+padding: 0px 10px;
+}
+
+.headmenu { grid-area: 1 / 1 / 2 / 2; }
+.menu { grid-area: 2 / 1 / 3 / 2; }
+.content { grid-area: 1 / 2 / 3 / 3; }
+.foot { grid-area: 3 / 1 / 4 / 3; }
+
+@media only screen and (max-width: 768px){
+.parent {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(4, auto);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+
+.headmenu { grid-area: 1 / 1 / 2 / 2; }
+.content { grid-area: 2 / 1 / 3 / 2; }
+.menu { grid-area: 3 / 1 / 4 / 2; }
+.foot { grid-area: 4 / 1 / 5 / 2; }
+
+}
+</style>
+
 </head>
+
 <body>
-    <h1 role="banner" style="line-height: 0.5; display:inline;">deryck2000</h1> .jp.eu.org<br/>
-    <hr />
-    HALLCUIE / Deryck2000 ｜ he/any ｜ Artist
-    <h2>CHANGELOGS</h2>
-    <table>
-        <tr><th nowrap valign="top">2026-01-27｜</th><td>add brush download link & banners</td></tr>
-        <tr><th nowrap valign="top">2025-12-25｜</th><td>renew & happy holiday</td></tr>
-    </table>
-    <h2>LINKS</h2>
-    follow me
-    <ul style="margin-block-start: 10px; margin-block-end: 10px; padding-inline-start: 20px;">
+<div class="parent">
+<div class="headmenu">
+    
+<div class="window" style="width: auto">
+  <div class="title-bar">
+    <div class="title-bar-text">DERYCK2000.jp.eu.org</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <a href="https://deryck2000.jp.eu.org/banner.png"><img src="./banner.png"></a></br>
+  </div>
+</div>
+
+
+</div>
+<div class="menu">
+    
+<div class="window" style="width: auto">
+  <div class="title-bar">
+    <div class="title-bar-text">hio</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+    <div class="window-body">
+        <fieldset>
+  <legend>Link</legend>
+        <ul style="margin-block-start: 2px; margin-block-end: 2px; padding-inline-start: 20px;">
         <li>
             <a href="https://misskey.art/@Deryck" target="_blank">
             @Deryck@misskey.art</a>(main)
@@ -50,31 +118,107 @@
         </li>
         <li>
             <a href="https://notestock.osa-p.net/@Deryck@misskey.art/profile" target="_blank">
-                Fediverse accs
+                Other Fediverse accs
             </a>
         </li>
     </ul>
-    <h2>DOWNLOAD</h2>
-    <table>
+</fieldset>
+        <fieldset>
+  <legend>Banner</legend>
+  200 x 40px<br>
+        <img src="./banner.png"><br>88 x 31px<br><img src="./banner-88-31.png">
+    </fieldset>
+    </div>
+</div>
+
+</div>
+<div class="content">
+    
+<div class="window" style="width: auto">
+  <div class="title-bar">
+    <div class="title-bar-text">WELCOME!</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+    <div class="window-body">
+    <img src="./burning-domain.webp"><br>
+    HALLCUIE / Deryck2000 ｜ he/any ｜ Artist
+    <hr>
+    <br>
+               <fieldset>
+  <legend>Changelog</legend>
+<div class="sunken-panel" style="height: 80px; width: 100%;">
+  <table class="interactive"style="height: 80px; width: 100%;">
+    <thead>
+      <tr>
+        <th width="68px">Date</th>
+        <th width=auto>Summary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2026-02-22</td>
+        <td>renew (again)</td>
+      </tr>
+      <tr>
+        <td>2026-01-27</td>
+        <td>add brush download link & banners</td>
+      </tr>
+      <tr>
+        <td>2025-12-25</td>
+        <td>renew & happy holiday</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</fieldset>
+<br>
+               <fieldset>
+  <legend>Download</legend>
+      <table>
         <tr><th nowrap valign="top"><a href="./assets/files/HAL-MARKER-FA.mdb">DOWNLOAD</a>｜</th><td><details><summary>HAL-MARKER-FA.mdb</summary>
-            <div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #444;">FireAlpaca等のmdiapp系お絵かきツール用のらくがきブラシです。</br>
-                <a href="https://assets.clip-studio.com/ja-jp/detail?id=1890867" target="_blank">一応クリスタ用もある</a></br>
+            <div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #444;">cool brush for mdiapp based painting software </br>
+            (e.g. Firealpaca, Medibang Paint)</br>
+                <a href="https://assets.clip-studio.com/ja-jp/detail?id=1890867" target="_blank">(for clip studio paint)</a></br>
                 <img src="./assets/img/hal-marker-fa.gif">
             </div>
         </details></td></tr>
     </table>
-    <hr>
+</fieldset>
+<br>
+               <fieldset>
+  <legend>Friends</legend>
     <center>
         <a href="https://misskey.art/" target="_blank"><img src="./assets/other-banner/miart.webp" style="vertical-align:middle;"></a><a href="https://starcat-jp.github.io/My-website/" target="_blank"><img src="./assets/other-banner/starcat.webp" style="vertical-align:middle;"></a><a href="https://monolith-rave.xyz/" target="_blank"><img src="./assets/other-banner/mono-xyz.webp" style="vertical-align:middle;"></a><a href="https://suiboutown.tumblr.com/" target="_blank"><img src="./assets/other-banner/suiboutawn.webp" style="vertical-align:middle;"></a><a href="https://zeld-work.tumblr.com/" target="_blank"><img src="./assets/other-banner/ZELDXXX.webp" style="vertical-align:middle;"></a><a href="https://the-mama-fly.mystrikingly.com/" target="_blank"><img src="./assets/other-banner/544326_194302.webp" style="vertical-align:middle;"></a><a href="https://hunyu.site/" target="_blank"><img src="./assets/other-banner/hunyu.webp" style="vertical-align:middle;"></a><a href="https://c30.life/" target="_blank"><img src="./assets/other-banner/c30-life.webp" style="vertical-align:middle;"></a>
+    </center>
+    </fieldset>
         <br/>
         <a href="https://blog.codinghorror.com/the-works-on-my-machine-certification-program/" target="_blank"><img src="./assets/img/works-on-my-machine-v2.webp"></a>
-        <p>☆</p>
-        LINK FREE! 200x40px
-        <a href="https://deryck2000.jp.eu.org/banner.png"><img src="./banner.png" style="vertical-align:middle;"></a><br/>
-        <small>https://deryck2000.jp.eu.org/banner.png or .webp</small>
-    </center>
-    <hr>
-    <center>©2025 HALLCUIE</center>
+    </div>
+</div>
+
+</div>
+<div class="foot" style="color:#FFF;"><center>©2025 HALLCUIE</center></div>
+</div>
 </body>
-<html></html>
+<script>
+  document.querySelectorAll('table.interactive').forEach(element => {
+    element.addEventListener('click', (event) => {
+      const highlightedClass = 'highlighted';
+      const isRow = element => element.tagName === 'TR' && element.parentElement.tagName === 'TBODY';
+      const newlySelectedRow = event.composedPath().find(isRow);
+      const previouslySelectedRow = Array.from(newlySelectedRow.parentElement.children).filter(isRow).find(element => element.classList.contains(highlightedClass));
+      if(previouslySelectedRow){
+        previouslySelectedRow.classList.toggle(highlightedClass);
+      }
+
+      if (newlySelectedRow) {
+        newlySelectedRow.classList.toggle(highlightedClass);
+      }
+    })
+  });
+</script>
 </html>
