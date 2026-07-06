@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+##############################
+スパゲッティコードへようこそ
+##############################
+-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="hallcuie's site">
+  <title>Hal-AutoHitter</title>
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <style type="text/css">
+  /*@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400..600&display=swap');*/
+  body{
+    margin: 30px auto 30px;
+    max-width: 550px;
+    background: #008080;
+    -webkit-font-smoothing: none; /* Chrome, Safari */
+    -moz-osx-font-smoothing: none; /* Firefox */
+    font-smoothing: none;
+
+    image-rendering: pixelated; /* Chrome, Edge, Safari */
+    image-rendering: crisp-edges; /* Firefox */
+  }
+
+  .title-bar, .window, button, input, label, legend, li[role=tab], option, select, table, textarea, ul.tree-view{
+    font-family: "Arial",sans-serif !important;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  /*テスト用*/
+  /*div{border: 1px solid #ddd;}*/
+
+</style>
+
+</head>
+
+<body>
+  <div class="parent" style="min-width: 400px">
+    <div class="headmenu" style="margin-bottom: 10px">
+
+      <div class="window" style="width: auto">
+        <div class="title-bar">
+          <div class="title-bar-text">DERYCK2000.jp.eu.org</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <a href="https://deryck2000.jp.eu.org/"><img src="../banner.png"></a></br>
+        </div>
+      </div>
+
+
+    </div>
+      <div class="content" style="margin-bottom: 30px">
+        <div class="window" style="width: auto">
+          <div class="title-bar">
+            <div class="title-bar-text">PLACEHOLDER</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
+          </br>
+<div style="font-size: 30px"><b>Hal-AutoHitter</b></div>
+<hr>
+</br>
+AutoHotKey V1.1製のオートクリッカーです。Windows 11でのみテスト済。</br>
+左クリック、右クリック、ホイールクリックからF13キー、さらにはAlt + F4 まで自由自在です。</br>
+プリセット機能付きで、設定を簡単に保存して切り替えできます。</br>
+このスクリプトは<code>Presets</code>フォルダを作成し、ここにプリセットを保存します。
+</br></br>
+<img src="../assets/img/Hal-AutoHitter_v1.png">
+</br></br>
+<div style="font-size: 25px"><b>説明</b></div>
+<hr>
+</br>
+<ul>
+  <li><b>Mode</b></br>モードの切り替え。</br>Mouseの場合は<code>Click</code>、Keyの場合は<code>Send</code>を使用しますが、正直Keyモードだけでいいです。</li></br>
+  <li><b>HIT!</b></br>入力したいキー/マウスボタンをここに入力。AutoHotKey式です</br><a href="https://www.autohotkey.com/docs/v1/KeyList.htm">https://www.autohotkey.com/docs/v1/KeyList.htm</a> を参考にしてください。</li></br>
+  <li><b>Interval(ms)</b></br>連打する間隔をここに入力。1000msで1秒です。</li></br>
+    <li><b>Preset</b></br>プリセットの一覧です。このスクリプトと同じ階層にある<code>Presets</code>フォルダに保存されたプリセットを表示します。</br>｜📂：Presetsフォルダをエクスプローラで開きます。</br>｜🔃：プリセットリストをリロードします。</br>｜💾：現在の設定をプリセットとして保存します。</br>｜✔：選択したプリセットを読み込みます。</li></br>
+      <li><b>Setting</b></br>特に言う事なし。</li></br>
+</ul>
+<div style="font-size: 25px"><b>ダウンロード</b></div>
+<hr>
+</br>
+<table>
+    <tr><th nowrap valign="top"><a href="./assets/files/Hal-AutoHitter_v1.ahk" download>AHK</a>・<a href="./assets/files/Hal-AutoHitter_v1.exe" download>EXE</a>｜</th><td>Hal-AutoHitter_v1 (2026-07-06)</td></tr>
+</table>
+.ahkはAutoHotKey v1.1が必要です。</br>
+.exeは単体で動作します。
+</br></br>
+<div style="font-size: 25px"><b>サポート</b></div>
+<hr>
+</br>
+一切なし。気分で更新します。
+          </div>
+        </div>
+      </div>
+      <div class="foot" style="color:#FFF;"><center>©2025-2026 HALLCUIE</center></div>
+    </div>
+  </body>
+  <script>
+  document.querySelectorAll('table.interactive').forEach(element => {
+    element.addEventListener('click', (event) => {
+      const highlightedClass = 'highlighted';
+      const isRow = element => element.tagName === 'TR' && element.parentElement.tagName === 'TBODY';
+      const newlySelectedRow = event.composedPath().find(isRow);
+      const previouslySelectedRow = Array.from(newlySelectedRow.parentElement.children).filter(isRow).find(element => element.classList.contains(highlightedClass));
+      if(previouslySelectedRow){
+        previouslySelectedRow.classList.toggle(highlightedClass);
+      }
+
+      if (newlySelectedRow) {
+        newlySelectedRow.classList.toggle(highlightedClass);
+      }
+    })
+  });
+</script>
+</html>

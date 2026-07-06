@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+##############################
+スパゲッティコードへようこそ
+##############################
+-->
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,8 +14,8 @@
   <style type="text/css">
   /*@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400..600&display=swap');*/
   body{
-    margin: 30px auto 0;
-    max-width: 760px;
+    margin: 30px auto 30px;
+    max-width: 820px;
     background: #008080;
     -webkit-font-smoothing: none; /* Chrome, Safari */
     -moz-osx-font-smoothing: none; /* Firefox */
@@ -30,17 +35,14 @@
   /*div{border: 1px solid #ddd;}*/
 
 </style>
-
-
-
 <style type="text/css">
 .parent {
   display: grid;
-  grid-template-columns: 250px 500px;
+  grid-template-columns: 250px 550px;
   grid-template-rows: minmax(1px, max-content);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  padding: 0px 10px;
+  /* margin: 0px 10px; */
 }
 
 .headmenu { grid-area: 1 / 1 / 2 / 2; }
@@ -53,8 +55,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
-    grid-column-gap: 10px;
+    grid-column-gap: 0px;
     grid-row-gap: 10px;
+      padding: 0px;
   }
 
   .headmenu { grid-area: 1 / 1 / 2 / 2; }
@@ -71,7 +74,7 @@
   <div class="parent">
     <div class="headmenu">
 
-      <div class="window" style="width: auto">
+      <div class="window" style="width: auto, max-width: 460px">
         <div class="title-bar">
           <div class="title-bar-text">DERYCK2000.jp.eu.org</div>
           <div class="title-bar-controls">
@@ -206,7 +209,7 @@
           </br>
               AutoHotKey v1 Script
               <table>
-                  <tr><th nowrap valign="top"><a href="./assets/files/Hal-AutoHitter_v1.ahk" download>AHK</a>・<a href="./assets/files/Hal-AutoHitter_v1.exe" download>EXE</a>｜</th><td><details><summary>Hal-AutoHitter_v1</summary>
+                  <tr><th nowrap valign="top"><a href="./assets/files/Hal-AutoHitter_v1.ahk" download>AHK</a>・<a href="./assets/files/Hal-AutoHitter_v1.exe" download>EXE</a>｜</th><td><details><summary>Hal-AutoHitter_v1</br><a href="https://deryck2000.jp.eu.org/hal-autohitter/">説明はこちら</a></summary>
                     <div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #444;">
                         auto click, press key, or shortcut key</br>
                         this script makes "Presets" folder</br>
